@@ -27,7 +27,7 @@
         let sigma = document.getElementById('sigma');
         setInterval(() => {
             sigma.style.visibility = (sigma.style.visibility == 'hidden' ? '' : 'hidden');
-        }, 500); // Ubah angka ini untuk mengatur kecepatan kedipan
+        }, 50); // Ubah angka ini untuk mengatur kecepatan kedipan
     </script>
 </body>
 </html>
