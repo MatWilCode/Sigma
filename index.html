@@ -2,36 +2,53 @@ s2<!DOCTYPE html>
 <html lang="en">
 <body>
   <div> 
-Welcome to the Autumn Harvest Calculator! In this activity, you’ll create a Python program to help farmers calculate their earnings from selling pumpkins, apples, and corn.
+# Get prices from user (pakai int)
+price_pumpkin = int(input("Price per pumpkin: "))
+price_apple = int(input("Price per apple: "))
+price_corn = int(input("Price per ear of corn: "))
 
-Your task is to write a program that does the following:
+# Get quantities from user
+num_pumpkin = int(input("Number of pumpkins: "))
+num_apple = int(input("Number of apples: "))
+num_corn = int(input("Number of ears of corn: "))
 
-Get User Inputs:
+# Calculate earnings
+pumpkin_earnings = price_pumpkin * num_pumpkin
+apple_earnings = price_apple * num_apple
+corn_earnings = price_corn * num_corn
 
-Ask the user for the price per pumpkin, price per apple, and price per ear of corn.
-Ask the user how many pumpkins, apples, and ears of corn they plan to sell.
-Calculate the Earnings:
+# Total
+total_earnings = pumpkin_earnings + apple_earnings + corn_earnings
 
-Calculate the total earnings for each item by multiplying the price by the quantity.
-Calculate the overall total earnings by adding up the earnings from pumpkins, apples, and corn.
-Display the Results:
+# Output
+print("Pumpkin earnings:", pumpkin_earnings)
+print("Apple earnings:", apple_earnings)
+print("Corn earnings:", corn_earnings)
+print("Total earnings:", total_earnings)
 
-Print out the earnings for each item (pumpkins, apples, corn).
-Print out the overall total earnings.
-For example:
+# Get prices from user
+price_pumpkin = float(input("Price per pumpkin: "))
+price_apple = float(input("Price per apple: "))
+price_corn = float(input("Price per ear of corn: "))
 
-Price per pumpkin: 5
-Price per apple: 1
-Price per ear of corn: 0.5
-Number of pumpkins: 10
-Number of apples: 50
-Number of ears of corn: 100
-The output should look something like:
+# Get quantities from user
+num_pumpkin = int(input("Number of pumpkins: "))
+num_apple = int(input("Number of apples: "))
+num_corn = int(input("Number of ears of corn: "))
 
-Pumpkin earnings: 50
-Apple earnings: 50
-Corn earnings: 50.0
-Total earnings: 150.0
+# Calculate earnings
+pumpkin_earnings = price_pumpkin * num_pumpkin
+apple_earnings = price_apple * num_apple
+corn_earnings = price_corn * num_corn
+
+# Calculate total earnings
+total_earnings = pumpkin_earnings + apple_earnings + corn_earnings
+
+# Display results
+print("Pumpkin earnings:", pumpkin_earnings)
+print("Apple earnings:", apple_earnings)
+print("Corn earnings:", corn_earnings)
+print("Total earnings:", total_earnings)
   </div>
 </body>
 </html>
